@@ -204,9 +204,7 @@ Once we’ve logged in, we’re going to right click on the windows start menu a
 In the new window that opens, we’ll click on rename this PC (advanced).
 ![31](https://github.com/user-attachments/assets/a70b70bf-cefc-4e0c-a54a-0a42b5dfa8af)<br><br><br><br>
 
-
-
-Click change.
+Click change.<br>
 ![32](https://github.com/user-attachments/assets/e77249e5-bfdc-4baf-a463-b4db20cdc5f4)<br><br><br><br>
 
 
@@ -228,7 +226,7 @@ Now, we’ll type in the domain admin’s credentials we created in Active Direc
 ![35](https://github.com/user-attachments/assets/ed9dd93a-44cb-460a-80b7-da559ad862af)<br><br><br><br>
 
 
-Then click OK.
+Then click OK.<br>
 ![36](https://github.com/user-attachments/assets/0f91b5d9-4bd9-401f-997b-0a0a90a7299f)<br><br><br><br>
 
 
@@ -270,7 +268,7 @@ In the window that opens, we’ll click on Add.
 
 
 
-Then we’ll type in Domain Users and click check name and then OK.
+Then we’ll type in Domain Users and click check name and then OK.<br>
 <img width="352" alt="44" src="https://github.com/user-attachments/assets/da99301c-217b-4e28-a828-edf2bceee228"><br><br><br><br>
 
 
