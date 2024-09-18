@@ -169,12 +169,12 @@ When creating a user, simply adding admin to their name won’t do anything, add
 Domain Admins can manage an entire domain consisting of multiple computers all at once, while local admins are only able to manage a single machine at a time. 
 Now, let’s right click on the admin we just created and select properties. At the top of the window click on the Member Of tab then click on add.
 
-![25](https://github.com/user-attachments/assets/17f0fe09-4efd-4f9c-8f13-e4206def4b30)<br><br><br><br>
+![25](https://github.com/user-attachments/assets/a8ec07ca-b815-4f05-95d3-e69965fa99c4)<br><br><br><br>
 
 
 
 In the new window, type Domain Admins then click check name, click ok, click apply, and then ok.
-![26](https://github.com/user-attachments/assets/0db4a18d-244a-4f58-91e8-a582e05efe04)<br><br><br><br>
+![26](https://github.com/user-attachments/assets/27b4285e-bd25-4308-be5d-47143c775d43)<br><br><br><br>
 
 ![27](https://github.com/user-attachments/assets/de8f7ae3-e820-458e-b914-c406d10137e3)<br><br><br><br>
 
