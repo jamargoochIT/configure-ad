@@ -7,8 +7,7 @@ This tutorial goes through the implementation of on-premises Active Directory wi
 
 
 <p>
-After setting up DC-1 and Client-1
-We can install Active Directory on DC-1.
+After setting up DC-1 and Client-1 in Azure, we can install Active Directory on DC-1.
   
 But before we do that, we should briefly go over what active directory is and some of its functions. (This is not a comprehensive explanation of Active Directory and all its functions.)
 Active Directory is a centralized directory almost like a phone book, with usernames, passwords and permissions.
