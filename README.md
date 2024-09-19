@@ -10,13 +10,13 @@ After setting up DC-1 and Client-1 in Azure, we can install Active Directory on 
   
 But before we do that, we should briefly go over what active directory is and some of its functions. (This is not a comprehensive explanation of Active Directory and all its functions.)
 Active Directory is a centralized directory almost like a phone book, with usernames, passwords and permissions.
-
+Some of Active Directory's fucntions are:<br>
 - User Authentication – Checks credentials to make sure you’re allowed to access specific resources. 
-- Group Management – Organize users into groups to make it easier to manage policies and permissions.
+- Group Management – Organizes users into groups to make it easier to manage policies and permissions.
 - Policy Enforcement – Allows admins to create and set polices for users and computers.
 - Network Organization – Hierarchical organization of forests, trees, domains, organizational units (Ous), and objects. 
-- Forest – Top level – The entire hierarchical structure, that everything else resides within or below.
-- Trees – Collection of one or two domains that share a common namespace: Example, if you have a main domain named buy.com a tree would be shipping.buy.com and sales.buy.com.
+- Forest – Top level – The entire hierarchical structure that everything else resides within or below.
+- Trees – Collection of one or two domains that share a common namespace: Example, if you have a main domain named buy.com a tree would be returns.buy.com and sales.buy.com.
 - Domains – Sub-divisions – A separate area within the forest, with its own users and resources.
 - Organizational Units – Within domains, similar to folders that organize objects.
 - Objects – Individual items - Users, computers, groups, OUs, and printers.<br><br>
@@ -85,7 +85,7 @@ After the installation is complete, click close and go back to the server manage
 ![10](https://github.com/user-attachments/assets/ead891c9-d861-4c1f-9d60-f19bf8d02b82)<br><br><br><br>
 
 
-Now that Active directory is installed, we’re going to configure the DC-1 Virtual Machine to become a domain controller.
+Now that Active directory is installed, we’re going to configure the DC-1 virtual machine to become a domain controller.
 
 
 Click the flag in the upper right-hand corner and click promote this sever to domain controller.
@@ -136,7 +136,7 @@ Since we’ve created a domain, if we want to log into that domain, we have to c
 
 
 
-In the windows search bar type in active directory users and computers to open the application. Right click on the mydomain.com and select new, then organizational unit.
+In the windows search bar, type in active directory users and computers to open the application. Right click on mydomain.com and select new, then organizational unit.
 
 ![20](https://github.com/user-attachments/assets/015855aa-888b-4f34-b011-477895d9dc7f)<br><br><br><br>
 
@@ -183,16 +183,15 @@ Now we’ll sign out of DC-1 and then sign in as the admin we just created to en
 
 
 
-Once we’ve logged in, we can move on to the next big step. 
+Once we’ve logged in, we can move on to the next step. 
 ![29](https://github.com/user-attachments/assets/e37f68e1-722f-4e08-801c-19fea20b7a8c)<br><br><br><br>
 
 
 
 
 
-Join Client-1 to your domain (mydomain.com)
 
-Now we’ll log back into Client-1 as the local admin, in my case labuser, the credentials we used without mydomain.com.
+Now, we’ll log back into Client-1 as the local admin, in my case labuser, the credentials we used without mydomain.com.
 Once we’ve logged in, we’re going to right click on the windows start menu and select system.
 
 ![30](https://github.com/user-attachments/assets/d87b99df-a69b-4caa-8074-5ac3394cde0e)<br><br><br><br>
@@ -234,14 +233,14 @@ Click OK and then close.
 
 
 
-We’ll be prompted to restart, so we’ll click restart now. After Client-1 restarts it will be a part of DC-1’s domain.
+We’ll be prompted to restart, so we’ll click restart now. After Client-1 restarts it will be a part of DC-1’s domain.<br><br><br>
 
 
 
 
-Setup Remote Desktop for non-administrative users on Client-1
 
-We’ll log into Client-1 as mydomain.com\dah_admin  (use what name you created.)
+
+Up next we’ll log into Client-1 as mydomain.com\dah_admin  (use what name you created.)
 
 We’re going to open system properties by right clicking on the Windows start menu and selecting system.
 
@@ -270,7 +269,7 @@ Then we’ll type in Domain Users and click check name and then OK.<br>
 <img width="352" alt="44" src="https://github.com/user-attachments/assets/da99301c-217b-4e28-a828-edf2bceee228"><br><br><br><br>
 
 
-We have to configure this setting for non-admin users because we’re now joined to mydomain.com (As it says in the above image in the From this location field). So now, none-admin users can remote into the Client-1 computer (virtual machine).
+We have to configure this setting for non-admin users because we’re now joined to mydomain.com (As it says in the above image in the From this location field). So now, non-admin users can remote into the Client-1 computer (virtual machine).
 We haven’t created any non-admin users (who would be found in the EMPLOYEES OU we created in active directory.) but if we had any they would be able to remote into Client-1 now.
 And click OK again.
 
