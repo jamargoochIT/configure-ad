@@ -172,7 +172,7 @@ Now, let’s right click on the admin we just created and select properties. At 
 
 
 In the new window, type Domain Admins then click check name, click ok, click apply, and then ok.
-![26](https://github.com/user-attachments/assets/27b4285e-bd25-4308-be5d-47143c775d43)<br><br><br><br>
+![26](https://github.com/user-attachments/assets/27b4285e-bd25-4308-be5d-47143c775d43)
 
 ![27](https://github.com/user-attachments/assets/de8f7ae3-e820-458e-b914-c406d10137e3)<br><br><br><br>
 
