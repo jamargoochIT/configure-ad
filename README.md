@@ -25,7 +25,7 @@ Some of Active Directory's functions are:<br>
 Whew.<br><br>
 
 
-Now, let’s get started by logging into DC-1 and in the server manager dashboard, click on 2. Add roles and features.
+Now, let’s get started by logging into DC-1, and in the server manager dashboard, click on 2. Add roles and features.
 ![1](https://github.com/user-attachments/assets/e7bdf61b-d998-42e6-9d97-a18d182dffc8)<br><br><br><br>
 
  
@@ -93,7 +93,7 @@ Click the flag in the upper right-hand corner and click Promote this sever to do
 
 
 
-In the deployment configuration window, we’ll click on add a new forest and then type in our name for it. In this example I named my forest mydomain.com. Click next.
+In the deployment configuration window, we’ll click on add a new forest and then type in our name for it. In this example, I named my forest mydomain.com. Click next.
 
 ![12](https://github.com/user-attachments/assets/c1ed23da-1515-4f8f-8594-1625baa24edd)<br><br><br><br>
 
@@ -147,7 +147,7 @@ We’ll follow the same process to create another OU named Admins.
 ![21](https://github.com/user-attachments/assets/ecd9dab2-f046-4a23-9876-1f311c69aadb)<br><br><br><br>
 
 
-We’ll right click on the Admins OU and select new.
+We’ll right-click on the Admins OU and select new.
 We’ll fill out the fields, (you don’t need to fill in the last name field.), then click next.
 ![22](https://github.com/user-attachments/assets/eced69c5-c6f8-42a5-a05f-971c5d807ded)<br><br><br><br>
 
@@ -163,7 +163,7 @@ Click finish. Creating non-administrative users is done in the same way, but ins
 ![24](https://github.com/user-attachments/assets/2df5edb8-d2ce-4194-a9cc-5b08223535f5)<br><br><br><br>
 
 
-When creating a user, simply adding admin to their name won’t do anything, adding them to the Domain Admins group gives them domain admin permissions. 
+When creating a user, simply adding admin to their name won’t do anything; adding them to the Domain Admins group gives them domain admin permissions. 
 Domain Admins can manage an entire domain consisting of multiple computers all at once, while local admins are only able to manage a single machine at a time. 
 Now, let’s right-click on the admin we just created and select properties. At the top of the window, click on the Member Of tab, then click on Add.
 
@@ -171,7 +171,7 @@ Now, let’s right-click on the admin we just created and select properties. At 
 
 
 
-In the new window, type Domain Admins, then click check name, click ok, click apply, and then ok.
+In the new window, type Domain Admins, then click check name, click OK, click Apply, and then OK.
 ![26](https://github.com/user-attachments/assets/27b4285e-bd25-4308-be5d-47143c775d43)
 
 ![27](https://github.com/user-attachments/assets/de8f7ae3-e820-458e-b914-c406d10137e3)<br><br><br><br>
@@ -240,7 +240,7 @@ We’ll be prompted to restart, so we’ll click restart now. After Client-1 res
 
 
 
-Up next. we’ll log into Client-1 as mydomain.com\dah_admin  (use the name you created).
+Up next, we’ll log into Client-1 as mydomain.com\dah_admin  (use the name you created).
 
 We’re going to open system properties by right clicking on the Windows start menu and selecting system.
 
@@ -270,7 +270,7 @@ Then we’ll type in Domain Users and click check name, and then OK.<br>
 
 
 We have to configure this setting for non-admin users because we’re now joined to mydomain.com (as it says in the above image in the From this location field). So now, non-admin users can remote into the Client-1 computer (virtual machine).
-We haven’t created any non-admin users (who would be found in the EMPLOYEES OU we created in active directory.) but if we had any, they would be able to remote into Client-1 now.
+We haven’t created any non-admin users (who would be found in the EMPLOYEES OU we created in active directory). but if we had any, they would be able to remote into Client-1 now.
 And click OK again.
 
 <img width="279" alt="45" src="https://github.com/user-attachments/assets/54c37f7b-ff8d-4351-801d-978c28386771"><br><br><br><br>
